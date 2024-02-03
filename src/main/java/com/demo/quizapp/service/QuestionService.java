@@ -19,4 +19,9 @@ public class QuestionService {
     public List<Question> getQuestionsByLanguage(String language) {
         return questionDao.findByLanguage(language);
     }
+
+    public String addQuestion(Question question) {
+        questionDao.save(question);
+        return "Success";
+    }
 }
