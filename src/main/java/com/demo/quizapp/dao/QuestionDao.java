@@ -8,6 +8,5 @@ import java.util.List;
 
 @Repository
 public interface QuestionDao extends JpaRepository<Question, Integer> {
-
     List<Question> findByLanguage(String language);
 }
